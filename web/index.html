@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+        
+       <script src="script.js"></script>
+       <link rel="stylesheet" href="style.css"/>
+       <link rel="stylesheet" href="bulma.min.css"/>
+       <link rel="stylesheet" href="bulma-checkradio.min.css"/>
+</head>
+<body>
+       
+       <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                 ConvertAny
+                </a>
+            
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+            
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item">
+                    Home
+                  </a>
+            
+                  <a class="navbar-item">
+                    Documentation
+                  </a>
+            
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      More
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item">
+                        About
+                      </a>
+                      <a class="navbar-item">
+                        Jobs
+                      </a>
+                      <a class="navbar-item">
+                        Contact
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="navbar-item">
+                        Report an issue
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <div class="buttons">
+                      <a class="button is-primary">
+                        <strong>Sign up</strong>
+                      </a>
+                      <a class="button is-light">
+                        Log in
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <section class="hero is-fullheight-with-navbar">
+              <div class="hero-body">
+                     <div class="container is-fluid has-text-centered">
+                           
+                                          <div class="field">
+                                                 <div class="file is-centered is-primary has-name is-boxed">
+                                                   <label class="file-label">
+                                                     <input class="file-input" type="file" id="thefile">
+                                                     <span class="file-cta">
+                                                       <span class="file-icon">
+                                                         <i class="fas fa-cloud-upload-alt"></i>
+                                                       </span>
+                                                       <span class="file-label">
+                                                        <svg id="uploadIcon" height="24pt" viewBox="0 -24 512.00046 512" width="24pt" xmlns="http://www.w3.org/2000/svg"><path d="m413.492188 128.910156c-17.292969-86.765625-101.648438-143.082031-188.414063-125.789062-63.460937 12.648437-113.082031 62.238281-125.769531 125.691406-61.519532 7.089844-105.648438 62.707031-98.5625 124.230469 6.523437 56.621093 54.480468 99.339843 111.476562 99.300781h80.09375c8.847656 0 16.019532-7.171875 16.019532-16.019531 0-8.847657-7.171876-16.019531-16.019532-16.019531h-80.09375c-44.238281-.261719-79.882812-36.332032-79.625-80.566407.261719-44.234375 36.332032-79.882812 80.570313-79.625 8.164062.003907 15.023437-6.140625 15.921875-14.253906 8.132812-70.308594 71.722656-120.710937 142.03125-112.578125 59.109375 6.839844 105.738281 53.464844 112.574218 112.578125 1.34375 8.257813 8.5 14.308594 16.867188 14.253906 44.238281 0 80.097656 35.859375 80.097656 80.097657 0 44.234374-35.859375 80.09375-80.097656 80.09375h-80.09375c-8.847656 0-16.019531 7.171874-16.019531 16.019531 0 8.847656 7.171875 16.019531 16.019531 16.019531h80.097656c61.925782-.386719 111.816406-50.898438 111.433594-112.828125-.351562-56.394531-42.53125-103.753906-98.507812-110.605469zm0 0"/><path d="m313.019531 287.464844c6.148438 6.367187 16.289063 6.542968 22.652344.394531 6.363281-6.144531 6.539063-16.285156.394531-22.648437-.128906-.136719-.261718-.265626-.394531-.394532l-67.9375-67.953125c-6.246094-6.265625-16.390625-6.277343-22.65625-.03125-.007813.011719-.019531.019531-.027344.03125l-67.9375 67.953125c-6.363281 6.144532-6.539062 16.285156-.394531 22.648438 6.148438 6.363281 16.289062 6.539062 22.652344.394531.132812-.128906.265625-.261719.394531-.394531l40.609375-40.625v201.617187c0 8.847657 7.171875 16.019531 16.019531 16.019531 8.84375 0 16.015625-7.171874 16.015625-16.019531v-201.617187zm0 0"/></svg>
+                                                       
+                                                 
+                                                        <svg version="1.1" id="uploadingIcon" class="hide" height="24pt" width="24pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                                                         <rect fill="none" stroke="#fff" stroke-width="4" x="25" y="25" width="50" height="50">
+                                                        <animateTransform
+                                                           attributeName="transform"
+                                                           dur="0.5s"
+                                                           from="0 50 50"
+                                                           to="180 50 50"
+                                                           type="rotate"
+                                                           id="strokeBox"
+                                                           attributeType="XML"
+                                                           begin="rectBox.end"/>
+                                                        </rect>
+                                                         <rect x="27" y="27" fill="#fff" width="46" height="50">
+                                                        <animate
+                                                           attributeName="height"
+                                                           dur="1.3s"
+                                                           attributeType="XML"
+                                                           from="50" 
+                                                           to="0"
+                                                           id="rectBox" 
+                                                           fill="freeze"
+                                                           begin="0s;strokeBox.end"/>
+                                                        </rect>
+                                                      </svg>
+</span>
+                                                     </span>
+                                                     <span class="file-name" id="fileName">Select file</span>
+                                                   </label>
+                                                 </div>
+                                               </div>
+                                               <div class="field">
+                                                 <input class="is-checkradio" id="pdfFormat" type="radio" name="convertFormat" checked="checked" value="pdf">
+                                                 <label for="pdfFormat">.pdf</label>
+                                                 <input class="is-checkradio" id="docFormat" type="radio" name="convertFormat" value="doc">
+                                                 <label for="docFormat">.doc</label>
+                                                 <input class="is-checkradio" id="docxFormat" type="radio" name="convertFormat" value="docx">
+                                                 <label for="docxFormat">.docx</label>
+                                                 <input class="is-checkradio" id="pptFormat" type="radio" name="convertFormat" value="ppt">
+                                                 <label for="pptFormat">.ppt</label>
+                                                 <input class="is-checkradio" id="pptxFormat" type="radio" name="convertFormat" value="pptx">
+                                                 <label for="pptxFormat">.pptx</label>
+                                                 <input class="is-checkradio" id="xlsFormat" type="radio" name="convertFormat" value="xls">
+                                                 <label for="xlsFormat">.xls</label>
+                                                 <input class="is-checkradio" id="xlsxFormat" type="radio" name="convertFormat" value="xlsx">
+                                                 <label for="xlsxFormat">.xlsx</label>
+                                                 <input class="is-checkradio" id="numbersFormat" type="radio" name="convertFormat" value="numbers">
+                                                 <label for="numbersFormat">.numbers</label>
+                                                 <input class="is-checkradio" id="pagesFormat" type="radio" name="convertFormat" value="pages">
+                                                 <label for="pagesFormat">.pages</label>
+                                                 <input class="is-checkradio" id="keyFormat" type="radio" name="convertFormat" value="key">
+                                                 <label for="keyFormat">.key</label>
+                                                 <input class="is-checkradio" id="csvFormat" type="radio" name="convertFormat" value="csv">
+                                                 <label for="csvFormat">.csv</label>
+                                                 <input class="is-checkradio" id="txtFormat" type="radio" name="convertFormat" value="txt">
+                                                 <label for="txtFormat">.txt</label>
+                                                 <input class="is-checkradio" id="odtFormat" type="radio" name="convertFormat" value="odt">
+                                                 <label for="odtFormat">.odt</label>
+                                                 <input class="is-checkradio" id="odsFormat" type="radio" name="convertFormat" value="ods">
+                                                 <label for="odsFormat">.ods</label>
+                                                 <input class="is-checkradio" id="odpFormat" type="radio" name="convertFormat" value="odp">
+                                                 <label for="odpFormat">.odp</label>
+                                                 <input class="is-checkradio" id="htmlFormat" type="radio" name="convertFormat" value="html">
+                                                 <label for="htmlFormat">.html</label>
+                                                 <input class="is-checkradio" id="rtfFormat" type="radio" name="convertFormat" value="rtf">
+                                                 <label for="rtfFormat">.rtf</label>
+                                                 <input class="is-checkradio" id="xltFormat" type="radio" name="convertFormat" value="xlt">
+                                                 <label for="xltFormat">.xlt</label>
+                                                 <input class="is-checkradio" id="psdFormat" type="radio" name="convertFormat" value="psd">
+                                                 <label for="psdFormat">.psd</label>
+                                                 <input class="is-checkradio" id="bmpFormat" type="radio" name="convertFormat" value="bmp">
+                                                 <label for="bmpFormat">.bmp</label>
+                                                 <input class="is-checkradio" id="jpegFormat" type="radio" name="convertFormat" value="jpeg">
+                                                 <label for="jpegFormat">.jpeg</label>
+                                                 <input class="is-checkradio" id="pngFormat" type="radio" name="convertFormat" value="png">
+                                                 <label for="pngFormat">.png</label>
+                                                 <input class="is-checkradio" id="xmlFormat" type="radio" name="convertFormat" value="xml">
+                                                 <label for="xmlFormat">.xml</label>
+                                                 <input class="is-checkradio" id="svgFormat" type="radio" name="convertFormat" value="svg">
+                                                 <label for="svgFormat">.svg</label>
+                                                 <input class="is-checkradio" id="cdrFormat" type="radio" name="convertFormat" value="cdr">
+                                                 <label for="cdrFormat">.cdr</label>
+                                                 <input class="is-checkradio" id="epsFormat" type="radio" name="convertFormat" value="eps">
+                                                 <label for="epsFormat">.eps</label>
+                                                 <input class="is-checkradio" id="pswFormat" type="radio" name="convertFormat" value="psw">
+                                                 <label for="pswFormat">.psw</label>
+                                                 <input class="is-checkradio" id="dotFormat" type="radio" name="convertFormat" value="dot">
+                                                 <label for="dotFormat">.dot</label>
+                                                 <input class="is-checkradio" id="tiffFormat" type="radio" name="convertFormat" value="tiff">
+                                                 <label for="tiffFormat">.tiff</label>
+
+
+                                               </div>
+                                               <div class="buttons has-addons is-centered">
+                                          <button class="button royalbluebg  has-text-white"type="submit" onclick="UserAction()">Convert</button>
+                                          </div>
+
+                                          <div class="message is-info">
+                                                
+                                                 <div class="message-body" id="result">
+                                        Click on convert.
+                                                   </div>
+                                               </div>
+                                  
+              
+                          </div>
+              </div>
+            </section>
+
+           
+</body>
+</html>

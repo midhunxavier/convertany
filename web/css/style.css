@@ -1,0 +1,31 @@
+.navbar-brand a{
+	font-weight: bold;
+	font-size: 24px;
+}
+
+/* Style buttons */
+.btn {
+ background-color: DodgerBlue;
+ border: none;
+ color: white;
+ padding: 12px 30px;
+ cursor: pointer;
+ font-size: 20px;
+}
+
+.royalbluebg{
+	background-color: DodgerBlue!important;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+ background-color: RoyalBlue;
+}
+
+.hide {
+	display:none;
+}
