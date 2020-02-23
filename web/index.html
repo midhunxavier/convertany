@@ -3,72 +3,43 @@
 <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
+       <title>Free File Converter - ConvertAny</title>
         
-       <script src="script.js"></script>
-       <link rel="stylesheet" href="style.css"/>
-       <link rel="stylesheet" href="bulma.min.css"/>
-       <link rel="stylesheet" href="bulma-checkradio.min.css"/>
+       <script src="js/script.js"></script>
+       <link rel="stylesheet" href="css/style.css"/>
+       <link rel="stylesheet" href="css/bulma.min.css"/>
+       <link rel="stylesheet" href="css/bulma-checkradio.min.css"/>
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJL4LLJCWJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JJL4LLJCWJ');
+</script>
 </head>
 <body>
        
        <nav class="navbar" role="navigation" aria-label="main navigation">
               <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
+                <a class="navbar-item" href="//convertany.justprint.io">
                  ConvertAny
                 </a>
             
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarExample">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                 </a>
               </div>
             
-              <div id="navbarBasicExample" class="navbar-menu">
+              <div id="navbarExample" class="navbar-menu">
                 <div class="navbar-start">
-                  <a class="navbar-item">
-                    Home
+                  <a class="navbar-item" href="https://github.com/midhunxavier/convertany" target="_blank">
+                    About
                   </a>
             
-                  <a class="navbar-item">
-                    Documentation
-                  </a>
-            
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                      More
-                    </a>
-            
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item">
-                        About
-                      </a>
-                      <a class="navbar-item">
-                        Jobs
-                      </a>
-                      <a class="navbar-item">
-                        Contact
-                      </a>
-                      <hr class="navbar-divider">
-                      <a class="navbar-item">
-                        Report an issue
-                      </a>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="navbar-end">
-                  <div class="navbar-item">
-                    <div class="buttons">
-                      <a class="button is-primary">
-                        <strong>Sign up</strong>
-                      </a>
-                      <a class="button is-light">
-                        Log in
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </nav>
@@ -78,7 +49,7 @@
                            
                                           <div class="field">
                                                  <div class="file is-centered is-primary has-name is-boxed">
-                                                   <label class="file-label">
+                                                   <label class="file-label file-input-box">
                                                      <input class="file-input" type="file" id="thefile">
                                                      <span class="file-cta">
                                                        <span class="file-icon">
@@ -113,82 +84,88 @@
                                                            begin="0s;strokeBox.end"/>
                                                         </rect>
                                                       </svg>
-</span>
+                                                    </span>
                                                      </span>
                                                      <span class="file-name" id="fileName">Select file</span>
                                                    </label>
                                                  </div>
                                                </div>
+                                               <div class="message">
+                                                
+                                                <div class="message-body">Select the format to convert to.</div>
+                                              </div>
                                                <div class="field">
-                                                 <input class="is-checkradio" id="pdfFormat" type="radio" name="convertFormat" checked="checked" value="pdf">
-                                                 <label for="pdfFormat">.pdf</label>
-                                                 <input class="is-checkradio" id="docFormat" type="radio" name="convertFormat" value="doc">
-                                                 <label for="docFormat">.doc</label>
-                                                 <input class="is-checkradio" id="docxFormat" type="radio" name="convertFormat" value="docx">
-                                                 <label for="docxFormat">.docx</label>
-                                                 <input class="is-checkradio" id="pptFormat" type="radio" name="convertFormat" value="ppt">
-                                                 <label for="pptFormat">.ppt</label>
-                                                 <input class="is-checkradio" id="pptxFormat" type="radio" name="convertFormat" value="pptx">
-                                                 <label for="pptxFormat">.pptx</label>
-                                                 <input class="is-checkradio" id="xlsFormat" type="radio" name="convertFormat" value="xls">
-                                                 <label for="xlsFormat">.xls</label>
-                                                 <input class="is-checkradio" id="xlsxFormat" type="radio" name="convertFormat" value="xlsx">
-                                                 <label for="xlsxFormat">.xlsx</label>
-                                                 <input class="is-checkradio" id="numbersFormat" type="radio" name="convertFormat" value="numbers">
-                                                 <label for="numbersFormat">.numbers</label>
-                                                 <input class="is-checkradio" id="pagesFormat" type="radio" name="convertFormat" value="pages">
-                                                 <label for="pagesFormat">.pages</label>
-                                                 <input class="is-checkradio" id="keyFormat" type="radio" name="convertFormat" value="key">
-                                                 <label for="keyFormat">.key</label>
-                                                 <input class="is-checkradio" id="csvFormat" type="radio" name="convertFormat" value="csv">
-                                                 <label for="csvFormat">.csv</label>
-                                                 <input class="is-checkradio" id="txtFormat" type="radio" name="convertFormat" value="txt">
-                                                 <label for="txtFormat">.txt</label>
-                                                 <input class="is-checkradio" id="odtFormat" type="radio" name="convertFormat" value="odt">
-                                                 <label for="odtFormat">.odt</label>
-                                                 <input class="is-checkradio" id="odsFormat" type="radio" name="convertFormat" value="ods">
-                                                 <label for="odsFormat">.ods</label>
-                                                 <input class="is-checkradio" id="odpFormat" type="radio" name="convertFormat" value="odp">
-                                                 <label for="odpFormat">.odp</label>
-                                                 <input class="is-checkradio" id="htmlFormat" type="radio" name="convertFormat" value="html">
-                                                 <label for="htmlFormat">.html</label>
-                                                 <input class="is-checkradio" id="rtfFormat" type="radio" name="convertFormat" value="rtf">
-                                                 <label for="rtfFormat">.rtf</label>
-                                                 <input class="is-checkradio" id="xltFormat" type="radio" name="convertFormat" value="xlt">
-                                                 <label for="xltFormat">.xlt</label>
-                                                 <input class="is-checkradio" id="psdFormat" type="radio" name="convertFormat" value="psd">
-                                                 <label for="psdFormat">.psd</label>
-                                                 <input class="is-checkradio" id="bmpFormat" type="radio" name="convertFormat" value="bmp">
-                                                 <label for="bmpFormat">.bmp</label>
-                                                 <input class="is-checkradio" id="jpegFormat" type="radio" name="convertFormat" value="jpeg">
-                                                 <label for="jpegFormat">.jpeg</label>
-                                                 <input class="is-checkradio" id="pngFormat" type="radio" name="convertFormat" value="png">
-                                                 <label for="pngFormat">.png</label>
-                                                 <input class="is-checkradio" id="xmlFormat" type="radio" name="convertFormat" value="xml">
-                                                 <label for="xmlFormat">.xml</label>
-                                                 <input class="is-checkradio" id="svgFormat" type="radio" name="convertFormat" value="svg">
-                                                 <label for="svgFormat">.svg</label>
-                                                 <input class="is-checkradio" id="cdrFormat" type="radio" name="convertFormat" value="cdr">
-                                                 <label for="cdrFormat">.cdr</label>
-                                                 <input class="is-checkradio" id="epsFormat" type="radio" name="convertFormat" value="eps">
-                                                 <label for="epsFormat">.eps</label>
-                                                 <input class="is-checkradio" id="pswFormat" type="radio" name="convertFormat" value="psw">
-                                                 <label for="pswFormat">.psw</label>
-                                                 <input class="is-checkradio" id="dotFormat" type="radio" name="convertFormat" value="dot">
-                                                 <label for="dotFormat">.dot</label>
-                                                 <input class="is-checkradio" id="tiffFormat" type="radio" name="convertFormat" value="tiff">
-                                                 <label for="tiffFormat">.tiff</label>
+                                                <div class="buttons">
+                                                
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="pdfFormat" type="radio" name="convertFormat" checked="checked" value="pdf">
+                                                 <label for="pdfFormat">.pdf</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="docFormat" type="radio" name="convertFormat" value="doc">
+                                                 <label for="docFormat">.doc</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="docxFormat" type="radio" name="convertFormat" value="docx">
+                                                 <label for="docxFormat">.docx</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="pptFormat" type="radio" name="convertFormat" value="ppt">
+                                                 <label for="pptFormat">.ppt</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="pptxFormat" type="radio" name="convertFormat" value="pptx">
+                                                 <label for="pptxFormat">.pptx</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="xlsFormat" type="radio" name="convertFormat" value="xls">
+                                                 <label for="xlsFormat">.xls</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="xlsxFormat" type="radio" name="convertFormat" value="xlsx">
+                                                 <label for="xlsxFormat">.xlsx</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="numbersFormat" type="radio" name="convertFormat" value="numbers">
+                                                 <label for="numbersFormat">.numbers</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="pagesFormat" type="radio" name="convertFormat" value="pages">
+                                                 <label for="pagesFormat">.pages</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="keyFormat" type="radio" name="convertFormat" value="key">
+                                                 <label for="keyFormat">.key</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="csvFormat" type="radio" name="convertFormat" value="csv">
+                                                 <label for="csvFormat">.csv</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="txtFormat" type="radio" name="convertFormat" value="txt">
+                                                 <label for="txtFormat">.txt</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="odtFormat" type="radio" name="convertFormat" value="odt">
+                                                 <label for="odtFormat">.odt</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="odsFormat" type="radio" name="convertFormat" value="ods">
+                                                 <label for="odsFormat">.ods</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="odpFormat" type="radio" name="convertFormat" value="odp">
+                                                 <label for="odpFormat">.odp</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="htmlFormat" type="radio" name="convertFormat" value="html">
+                                                 <label for="htmlFormat">.html</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="rtfFormat" type="radio" name="convertFormat" value="rtf">
+                                                 <label for="rtfFormat">.rtf</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="xltFormat" type="radio" name="convertFormat" value="xlt">
+                                                 <label for="xltFormat">.xlt</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="psdFormat" type="radio" name="convertFormat" value="psd">
+                                                 <label for="psdFormat">.psd</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="bmpFormat" type="radio" name="convertFormat" value="bmp">
+                                                 <label for="bmpFormat">.bmp</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="jpegFormat" type="radio" name="convertFormat" value="jpeg">
+                                                 <label for="jpegFormat">.jpeg</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="pngFormat" type="radio" name="convertFormat" value="png">
+                                                 <label for="pngFormat">.png</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="xmlFormat" type="radio" name="convertFormat" value="xml">
+                                                 <label for="xmlFormat">.xml</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="svgFormat" type="radio" name="convertFormat" value="svg">
+                                                 <label for="svgFormat">.svg</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="cdrFormat" type="radio" name="convertFormat" value="cdr">
+                                                 <label for="cdrFormat">.cdr</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="epsFormat" type="radio" name="convertFormat" value="eps">
+                                                 <label for="epsFormat">.eps</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="pswFormat" type="radio" name="convertFormat" value="psw">
+                                                 <label for="pswFormat">.psw</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="dotFormat" type="radio" name="convertFormat" value="dot">
+                                                 <label for="dotFormat">.dot</label></div>
+                                                 <div class="button is-outlined"><input class="is-checkradio is-small" id="tiffFormat" type="radio" name="convertFormat" value="tiff">
+                                                 <label for="tiffFormat">.tiff</label></div>
 
-
+                                                  </div>
                                                </div>
                                                <div class="buttons has-addons is-centered">
-                                          <button class="button royalbluebg  has-text-white"type="submit" onclick="UserAction()">Convert</button>
+                                          <button id="convert" class="button royalbluebg has-text-white"type="submit" onclick="UserAction()">Convert</button>
                                           </div>
 
                                           <div class="message is-info">
                                                 
                                                  <div class="message-body" id="result">
-                                        Click on convert.
+                                                   Click on convert.
                                                    </div>
                                                </div>
                                   

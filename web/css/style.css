@@ -3,7 +3,15 @@
 	font-size: 24px;
 }
 
-/* Style buttons */
+.file-input-box{
+	width: 200px;
+	max-width: 200px;
+}
+
+#fileName{
+	text-align: center;
+}
+
 .btn {
  background-color: DodgerBlue;
  border: none;
@@ -19,11 +27,6 @@
 	padding: 12px 30px;
 	cursor: pointer;
 	font-size: 20px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
- background-color: RoyalBlue;
 }
 
 .hide {
