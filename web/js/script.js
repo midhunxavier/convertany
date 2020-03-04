@@ -98,7 +98,7 @@ async function UserAction() {
         }
       }
     };
-    xhttp.open("POST", "https://qvkr4rwczf.execute-api.us-east-1.amazonaws.com/v1", true);
+    xhttp.open("POST", "type api url here", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(sendData));
     convertButton.classList.add("is-loading");
